@@ -1,0 +1,18 @@
+.input-box {
+  input {
+    position: relative;
+    padding: 8px 10px;
+    width: 400px;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+    border: 1px solid black;
+  }
+  .error {
+    color: red;
+    font-family: sans-serif;
+  }
+}

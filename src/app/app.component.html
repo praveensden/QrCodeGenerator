@@ -1,0 +1,19 @@
+<h2>QR CODE GENERATOR</h2>
+<div class="main-box">
+  <app-qrcode
+    *ngIf="qrInput.value"
+    [qrData]="qrInput.value"
+    (qrUrl)="getQrImageUrl($event)"
+  ></app-qrcode>
+  <form>
+    <app-input [control]="qrInput"></app-input>
+  </form>
+
+  <button
+    [disabled]="!qrInput.value"
+    class="btn btn-3"
+    (click)="downloadImage()"
+  >
+    <span>Download QR Code</span>
+  </button>
+</div>

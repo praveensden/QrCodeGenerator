@@ -1,0 +1,6 @@
+<div class="input-box">
+  <input type="text" [formControl]="control" />
+  <p class="error" *ngIf="control.touched && control.errors?.['required']">
+    It's a Required Field
+  </p>
+</div>
